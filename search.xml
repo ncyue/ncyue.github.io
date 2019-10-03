@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[关于网易云歌曲外链获取方法]]></title>
+    <url>%2F2019%2F10%2F04%2F%E5%85%B3%E4%BA%8E%E7%BD%91%E6%98%93%E4%BA%91%E6%AD%8C%E6%9B%B2%E5%A4%96%E9%93%BE%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[首先 找到你要下载的歌曲 用网页版打开 复制链接中的歌曲ID 如：Mike Zhou - The Dawn (亡灵序曲完美钢琴版) [Cover Dreamtale]http://music.163.com/#/song?id=476592630ID就是476592630然后将ID替换到链接 http://music.163.com/song/media/outer/url?id= .mp3 中如：http://music.163.com/song/media/outer/url?id=476592630.mp3复制这个链接 就可以直接通过网页打开纯mp3地址了 添加到下载工具中也可下载 还能添加到QQ空间背景音乐中原作者：Mike-Zhou链接：http://music.163.com/#/topic?id=18506054 http://wap.a9vg.com/thread-5363888-1-1.html]]></content>
+      <tags>
+        <tag>网易云音乐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F10%2F01%2FHello-World-0%2F</url>
     <content type="text"><![CDATA[I wanna be a rabbit]]></content>
