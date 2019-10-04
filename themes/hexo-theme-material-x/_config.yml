@@ -107,9 +107,9 @@ menu_mobile:
     icon: fas fa-archive
     url: blog/archives/
     rel: nofollow
-  - name: 开源项目
+  - name: Github
     icon: fas fa-code-branch
-    url: projects/
+    url: https://github.com/ncyue
   - name: 我的友链
     icon: fas fa-link
     url: friends/
@@ -161,9 +161,9 @@ sidebar:
         icon: fas fa-archive
         url: blog/archives/
         rel: nofollow
-      - name: 开源项目
+      - name: Github
         icon: fas fa-code-branch
-        url: projects/
+        url: https://github.com/ncyue
       - name: 我的友链
         icon: fas fa-link
         url: friends/
