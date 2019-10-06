@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ncyue.top/"/>
-  <updated>2019-10-03T16:57:02.700Z</updated>
+  <updated>2019-10-06T12:14:43.548Z</updated>
   <id>https://ncyue.top/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode回文数</title>
+    <link href="https://ncyue.top/2019/10/06/leetcode%E5%9B%9E%E6%96%87%E6%95%B0/"/>
+    <id>https://ncyue.top/2019/10/06/leetcode回文数/</id>
+    <published>2019-10-06T12:10:00.000Z</published>
+    <updated>2019-10-06T12:14:43.548Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>class Solution {public:bool isPalindrome(int x) {    int k=0;//存储后半部分数字的反转结果    if(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字        return false;    while(x&gt;k)    {        k = k*10+x%10;        x/=10;    }    return k==x || k/10==x;//数字个数为偶数和奇数分两种情况}};</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre&gt;&lt;code&gt;class Solution {
+public:
+bool isPalindrome(int x) 
+{
+    int k=0;//存储后半部分数字的反转结果
+
+    if(x&amp;lt;0||(x%10==0&amp;amp;&amp;amp;x!=0))//排除负数和最
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>关于网易云歌曲外链获取方法</title>
