@@ -2,8 +2,13 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+search: 
+  path: search.xml
+  field: all
+
 # Site
 title: Ncyue
+favicon: https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.1/images/favicon.ico
 subtitle:
 description:
 keywords:
@@ -101,11 +106,6 @@ deploy:
   react:
     opacity: 0.7
   
-  search:
-    path: search.xml
-    field: post
-    format: html
-    limit: 10000
     
     # Extensions
 ## Plugins: http://hexo.io/plugins/
