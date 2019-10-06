@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[leetcode回文数]]></title>
     <url>%2F2019%2F10%2F06%2Fleetcode%E5%9B%9E%E6%96%87%E6%95%B0%2F</url>
-    <content type="text"><![CDATA[class Solution { public: bool isPalindrome(int x) { int k=0;//存储后半部分数字的反转结果 if(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字 return false; while(x&gt;k) { k = k*10+x%10; x/=10; } return k==x || k/10==x;//数字个数为偶数和奇数分两种情况 } };]]></content>
+    <content type="text"><![CDATA[Leetcode回文数1234567891011121314151617class Solution &#123;public: bool isPalindrome(int x) &#123; int k=0;//存储后半部分数字的反转结果 if(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字 return false; while(x&gt;k) &#123; k = k*10+x%10; x/=10; &#125; return k==x || k/10==x;//数字个数为偶数和奇数分两种情况 &#125; &#125;；]]></content>
       <tags>
         <tag>c++</tag>
       </tags>

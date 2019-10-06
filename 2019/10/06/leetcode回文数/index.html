@@ -412,22 +412,7 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <pre><code>class Solution {
-public:
-bool isPalindrome(int x) 
-{
-    int k=0;//存储后半部分数字的反转结果
-
-    if(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字
-        return false;
-    while(x&gt;k)
-    {
-        k = k*10+x%10;
-        x/=10;
-    }
-    return k==x || k/10==x;//数字个数为偶数和奇数分两种情况
-}
-};</code></pre>
+        <h2 id="Leetcode"><a href="#Leetcode" class="headerlink" title="Leetcode"></a>Leetcode</h2><h3 id="回文数"><a href="#回文数" class="headerlink" title="回文数"></a>回文数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(int x) </span><br><span class="line">    &#123;</span><br><span class="line">        int k=0;//存储后半部分数字的反转结果</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字</span><br><span class="line">            <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">while</span>(x&gt;k)</span><br><span class="line">        &#123;</span><br><span class="line">            k = k*10+x%10;</span><br><span class="line">            x/=10;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> k==x || k/10==x;//数字个数为偶数和奇数分两种情况</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;；</span><br></pre></td></tr></table></figure>
       </div>
       
         <br>
@@ -438,7 +423,7 @@ bool isPalindrome(int x)
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-06T20:14:43+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-06T20:53:32+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>updated at Oct 6, 2019</p>
@@ -661,6 +646,20 @@ bool isPalindrome(int x)
           
             
               
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Leetcode"><span class="toc-text">Leetcode</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#回文数"><span class="toc-text">回文数</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
 
             
           

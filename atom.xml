@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ncyue.top/"/>
-  <updated>2019-10-06T12:14:43.548Z</updated>
+  <updated>2019-10-06T12:53:32.852Z</updated>
   <id>https://ncyue.top/</id>
   
   <author>
@@ -21,21 +21,15 @@
     <link href="https://ncyue.top/2019/10/06/leetcode%E5%9B%9E%E6%96%87%E6%95%B0/"/>
     <id>https://ncyue.top/2019/10/06/leetcode回文数/</id>
     <published>2019-10-06T12:10:00.000Z</published>
-    <updated>2019-10-06T12:14:43.548Z</updated>
+    <updated>2019-10-06T12:53:32.852Z</updated>
     
-    <content type="html"><![CDATA[<pre><code>class Solution {public:bool isPalindrome(int x) {    int k=0;//存储后半部分数字的反转结果    if(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字        return false;    while(x&gt;k)    {        k = k*10+x%10;        x/=10;    }    return k==x || k/10==x;//数字个数为偶数和奇数分两种情况}};</code></pre>]]></content>
+    <content type="html"><![CDATA[<h2 id="Leetcode"><a href="#Leetcode" class="headerlink" title="Leetcode"></a>Leetcode</h2><h3 id="回文数"><a href="#回文数" class="headerlink" title="回文数"></a>回文数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isPalindrome(int x) </span><br><span class="line">    &#123;</span><br><span class="line">        int k=0;//存储后半部分数字的反转结果</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span>(x&lt;0||(x%10==0&amp;&amp;x!=0))//排除负数和最后一位数字为0的数字</span><br><span class="line">            <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">while</span>(x&gt;k)</span><br><span class="line">        &#123;</span><br><span class="line">            k = k*10+x%10;</span><br><span class="line">            x/=10;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> k==x || k/10==x;//数字个数为偶数和奇数分两种情况</span><br><span class="line">    &#125;</span><br><span class="line">    &#125;；</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;pre&gt;&lt;code&gt;class Solution {
-public:
-bool isPalindrome(int x) 
-{
-    int k=0;//存储后半部分数字的反转结果
-
-    if(x&amp;lt;0||(x%10==0&amp;amp;&amp;amp;x!=0))//排除负数和最
+        &lt;h2 id=&quot;Leetcode&quot;&gt;&lt;a href=&quot;#Leetcode&quot; class=&quot;headerlink&quot; title=&quot;Leetcode&quot;&gt;&lt;/a&gt;Leetcode&lt;/h2&gt;&lt;h3 id=&quot;回文数&quot;&gt;&lt;a href=&quot;#回文数&quot; class=&quot;headerlink&quot; ti
       
     
     </summary>
