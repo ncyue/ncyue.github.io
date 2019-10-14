@@ -85,13 +85,13 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[2019]]></title>
-    <url>%2Fblog%2Farchives%2Findex.html</url>
+    <title><![CDATA[所有标签]]></title>
+    <url>%2Fblog%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[所有标签]]></title>
-    <url>%2Fblog%2Ftags%2Findex.html</url>
+    <title><![CDATA[2019]]></title>
+    <url>%2Fblog%2Farchives%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
