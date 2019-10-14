@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ncyue.top/"/>
-  <updated>2019-10-06T12:53:32.852Z</updated>
+  <updated>2019-10-14T15:21:04.685Z</updated>
   <id>https://ncyue.top/</id>
   
   <author>
@@ -15,6 +15,130 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>leetcode最后一个单词的长度</title>
+    <link href="https://ncyue.top/2019/10/14/leetcode%E6%9C%80%E5%90%8E%E4%B8%80%E4%B8%AA%E5%8D%95%E8%AF%8D%E7%9A%84%E9%95%BF%E5%BA%A6/"/>
+    <id>https://ncyue.top/2019/10/14/leetcode最后一个单词的长度/</id>
+    <published>2019-10-14T15:13:00.000Z</published>
+    <updated>2019-10-14T15:21:04.685Z</updated>
+    
+    <content type="html"><![CDATA[<p>##Leetcode</p><p>###题目</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">给定一个仅包含大小写字母和空格 <span class="string">' '</span> 的字符串，返回其最后一个单词的长度。</span><br><span class="line"></span><br><span class="line">如果不存在最后一个单词，请返回 0 。</span><br><span class="line"></span><br><span class="line">说明：一个单词是指由字母组成，但不包含任何空格的字符串。</span><br><span class="line"></span><br><span class="line">示例:</span><br><span class="line"></span><br><span class="line">输入: <span class="string">"Hello World"</span></span><br><span class="line">输出: 5</span><br><span class="line"></span><br><span class="line">来源：力扣（LeetCode）</span><br><span class="line">链接：https://leetcode-cn.com/problems/length-of-last-word</span><br><span class="line">著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure><p>###题解</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int lengthOfLastWord(string s) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(s.size()==0)//如果字符串长度为0 则说明单词不存在</span><br><span class="line">            <span class="built_in">return</span> 0;</span><br><span class="line">        int j=0; //记录单词长度</span><br><span class="line">        <span class="keyword">for</span>(int i = s.size()-1;i&gt;=0;i--)</span><br><span class="line">        &#123;</span><br><span class="line">           // <span class="keyword">if</span>(s[i]&gt;=<span class="string">'a'</span>&amp;&amp;s[i]&lt;=<span class="string">'z'</span>||s[i]&gt;=<span class="string">'A'</span>&amp;&amp;s[i]&lt;=<span class="string">'Z'</span>)</span><br><span class="line">            <span class="keyword">if</span>(s[i]!=<span class="string">' '</span>)//如果字符串中元素等于<span class="string">' '</span>时则不执行</span><br><span class="line">                j++;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                <span class="keyword">if</span>(j&gt;0) //因为可能存在在字符串的最后有一连串<span class="string">" "</span>所以要确保单词存在时且长度大于0时才是正确的</span><br><span class="line">                    <span class="built_in">return</span> j;//返回最后一个单词的长度</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> j;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##Leetcode&lt;/p&gt;
+&lt;p&gt;###题目&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode实现strStr()</title>
+    <link href="https://ncyue.top/2019/10/14/leetcode%E5%AE%9E%E7%8E%B0strStr()/"/>
+    <id>https://ncyue.top/2019/10/14/leetcode实现strStr()/</id>
+    <published>2019-10-14T15:07:00.000Z</published>
+    <updated>2019-10-14T15:20:40.024Z</updated>
+    
+    <content type="html"><![CDATA[<p>##Leetcode</p><p>###题目</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">实现 strStr() 函数。</span><br><span class="line"></span><br><span class="line">给定一个 haystack 字符串和一个 needle 字符串，在 haystack 字符串中找出 needle 字符串出现的第一个位置 (从0开始)。如果不存在，则返回  -1。</span><br><span class="line"></span><br><span class="line">示例 1:</span><br><span class="line"></span><br><span class="line">输入: haystack = <span class="string">"hello"</span>, needle = <span class="string">"ll"</span></span><br><span class="line">输出: 2</span><br><span class="line">示例 2:</span><br><span class="line"></span><br><span class="line">输入: haystack = <span class="string">"aaaaa"</span>, needle = <span class="string">"bba"</span></span><br><span class="line">输出: -1</span><br><span class="line">说明:</span><br><span class="line"></span><br><span class="line">当 needle 是空字符串时，我们应当返回什么值呢？这是一个在面试中很好的问题。</span><br><span class="line"></span><br><span class="line">对于本题而言，当 needle 是空字符串时我们应当返回 0 。这与C语言的 strstr() 以及 Java的 indexOf() 定义相符。</span><br><span class="line"></span><br><span class="line">来源：力扣（LeetCode）</span><br><span class="line">链接：https://leetcode-cn.com/problems/implement-strstr</span><br><span class="line">著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。</span><br></pre></td></tr></table></figure><p>###题解</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int strStr(string haystack, string needle) </span><br><span class="line">    &#123;</span><br><span class="line">         <span class="keyword">if</span>(needle.empty())</span><br><span class="line">            <span class="built_in">return</span> 0;</span><br><span class="line">        </span><br><span class="line">        int i=0,j=0;</span><br><span class="line">        <span class="keyword">while</span>(haystack[i]!=<span class="string">'\0'</span>&amp;&amp;needle[j]!=<span class="string">'\0'</span>)//同时遍历比较，且这样的循环条件保证了needle中下标不会越界</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(haystack[i]==needle[j])</span><br><span class="line">            &#123;</span><br><span class="line">                i++;</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                i=i-j+1;</span><br><span class="line">                j=0; //保证了每次needle都是从第一个元素开始比较</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(needle[j]==<span class="string">'\0'</span>)</span><br><span class="line">            <span class="built_in">return</span> i-j;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">return</span> -1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##Leetcode&lt;/p&gt;
+&lt;p&gt;###题目&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode有效的括号</title>
+    <link href="https://ncyue.top/2019/10/14/leetcode%E6%9C%89%E6%95%88%E7%9A%84%E6%8B%AC%E5%8F%B7/"/>
+    <id>https://ncyue.top/2019/10/14/leetcode有效的括号/</id>
+    <published>2019-10-14T15:03:00.000Z</published>
+    <updated>2019-10-14T15:04:16.137Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isValid(string s)</span><br><span class="line">    &#123;</span><br><span class="line">        stack&lt;char&gt; sta;</span><br><span class="line">        <span class="keyword">for</span>(const auto&amp; v : s) //范围<span class="keyword">for</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(sta.empty()) //如果栈为空 在栈底添加元素v</span><br><span class="line">                sta.push(v);</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(compare(sta.top(),v))//如果栈不为空，将元素v与栈顶元素比较</span><br><span class="line">                sta.pop(); //如果栈顶元素与元素v是相匹配的闭合括号，就删除栈顶元素             </span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                sta.push(v);//如果不匹配将元素v入栈</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> sta.size()==0 ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">private:</span><br><span class="line">    bool compare(const char&amp; c1,const char&amp; c2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">return</span> (c1 == <span class="string">'('</span> &amp;&amp; c2 == <span class="string">')'</span>) || (c1 == <span class="string">'['</span> &amp;&amp; c2 == <span class="string">']'</span>) || (c1 == <span class="string">'&#123;'</span> &amp;&amp; c2 == <span class="string">'&#125;'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode实现数组加一的操作</title>
+    <link href="https://ncyue.top/2019/10/14/leetcode%E5%AE%9E%E7%8E%B0%E6%95%B0%E7%BB%84%E5%8A%A0%E4%B8%80%E6%93%8D%E4%BD%9C/"/>
+    <id>https://ncyue.top/2019/10/14/leetcode实现数组加一操作/</id>
+    <published>2019-10-14T15:01:00.000Z</published>
+    <updated>2019-10-14T15:02:15.182Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; plusOne(vector&lt;int&gt;&amp; digits) </span><br><span class="line">    &#123;       </span><br><span class="line">        <span class="keyword">for</span>(int i = digits.size()-1;i&gt;=0;i--)  </span><br><span class="line">        &#123;</span><br><span class="line">            digits[i]++; //加一</span><br><span class="line">            digits[i]=digits[i]%10;//取余数</span><br><span class="line">            <span class="keyword">if</span>(digits[i]!=0)//其实也就是当对应下标元素值不为9时 返回数组</span><br><span class="line">                <span class="built_in">return</span> digits;</span><br><span class="line">        &#125;//如果数组中全部为9 循环结束时 数组中元素全为0 </span><br><span class="line">        digits.push_back(0);//在容器尾部添加0</span><br><span class="line">        digits[0] = 1;</span><br><span class="line">        <span class="built_in">return</span> digits;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">/* 存在9的几种情况 :          1.当末位只有一个9</span><br><span class="line">                             2.不连续的9</span><br><span class="line">                             3.后边有连续的9</span><br><span class="line">                             4.全是9 */</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode实现x的平方根函数</title>
+    <link href="https://ncyue.top/2019/10/14/leetcode%E5%AE%9E%E7%8E%B0x%E7%9A%84%E5%B9%B3%E6%96%B9%E6%A0%B9%E5%87%BD%E6%95%B0/"/>
+    <id>https://ncyue.top/2019/10/14/leetcode实现x的平方根函数/</id>
+    <published>2019-10-14T14:55:00.000Z</published>
+    <updated>2019-10-14T14:59:25.620Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">  </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int mySqrt(int x) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(x==0)</span><br><span class="line">            <span class="built_in">return</span> 0;</span><br><span class="line">        long left = 1;</span><br><span class="line">        long right = x/2+1;// <span class="comment"># 为了照顾到 1 把右边界设置为 x // 2 + 1</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)</span><br><span class="line">        &#123;</span><br><span class="line">            // 注意：这里一定取右中位数，如果取左中位数，代码会进入死循环</span><br><span class="line">            // long mid = left + (right - left + 1) / 2;</span><br><span class="line">            long mid = (left+right+1) &gt;&gt; 1;  //mid一定要在循环体内 不然无法重置mid的值  </span><br><span class="line">            <span class="keyword">if</span>(mid*mid&gt;x)</span><br><span class="line">            &#123;</span><br><span class="line">                right = mid-1;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">            &#123;</span><br><span class="line">                left = mid;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        // 因为一定存在，因此无需后处理</span><br><span class="line">        <span class="built_in">return</span> (int)left;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=
+      
+    
+    </summary>
+    
+    
+    
+      <category term="c++" scheme="https://ncyue.top/tags/c/"/>
+    
+  </entry>
   
   <entry>
     <title>leetcode回文数</title>

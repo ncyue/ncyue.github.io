@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Hello World | Ncyue</title>
+  <title>leetcode有效的括号 | Ncyue</title>
   
   
 
@@ -296,8 +296,8 @@
         
   
     <h1 class="title">
-      <a href="/2019/10/01/hello-world/">
-        Hello World
+      <a href="/2019/10/14/leetcode有效的括号/">
+        leetcode有效的括号
       </a>
     </h1>
   
@@ -370,7 +370,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-10-01</p>
+    <p>2019-10-14</p>
   </a>
 </div>
 
@@ -414,20 +414,7 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isValid(string s)</span><br><span class="line">    &#123;</span><br><span class="line">        stack&lt;char&gt; sta;</span><br><span class="line">        <span class="keyword">for</span>(const auto&amp; v : s) //范围<span class="keyword">for</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(sta.empty()) //如果栈为空 在栈底添加元素v</span><br><span class="line">                sta.push(v);</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span>(compare(sta.top(),v))//如果栈不为空，将元素v与栈顶元素比较</span><br><span class="line">                sta.pop(); //如果栈顶元素与元素v是相匹配的闭合括号，就删除栈顶元素             </span><br><span class="line">            <span class="keyword">else</span></span><br><span class="line">                sta.push(v);//如果不匹配将元素v入栈</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> sta.size()==0 ? <span class="literal">true</span> : <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">private:</span><br><span class="line">    bool compare(const char&amp; c1,const char&amp; c2)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">return</span> (c1 == <span class="string">'('</span> &amp;&amp; c2 == <span class="string">')'</span>) || (c1 == <span class="string">'['</span> &amp;&amp; c2 == <span class="string">']'</span>) || (c1 == <span class="string">'&#123;'</span> &amp;&amp; c2 == <span class="string">'&#125;'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       </div>
       
         <br>
@@ -438,10 +425,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-01T18:46:17+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-10-14T23:04:16+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>updated at Oct 1, 2019</p>
+    <p>updated at Oct 14, 2019</p>
   </a>
 </div>
 
@@ -449,6 +436,9 @@
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/c/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>c++</p></a></div>
+
 
         
       
@@ -460,7 +450,7 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://ncyue.top/2019/10/01/hello-world/&title=Hello World | Ncyue&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://ncyue.top/2019/10/14/leetcode有效的括号/&title=leetcode有效的括号 | Ncyue&summary="
           
           >
           
@@ -472,7 +462,7 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ncyue.top/2019/10/01/hello-world/&title=Hello World | Ncyue&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://ncyue.top/2019/10/14/leetcode有效的括号/&title=leetcode有效的括号 | Ncyue&summary="
           
           >
           
@@ -484,7 +474,7 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=https://ncyue.top/2019/10/01/hello-world/&title=Hello World | Ncyue&summary="
+          href="http://service.weibo.com/share/share.php?url=https://ncyue.top/2019/10/14/leetcode有效的括号/&title=leetcode有效的括号 | Ncyue&summary="
           
           >
           
@@ -512,21 +502,40 @@
                       <span class="art-item-left">
                           <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
                           <h4>
-                              <a href="/2019/10/01/Hello-World-0/" rel="prev" title="Hello World">
+                              <a href="/2019/10/14/leetcode实现strStr()/" rel="prev" title="leetcode实现strStr()">
                                 
-                                    Hello World
+                                    leetcode实现strStr()
                                 
                               </a>
                           </h4>
                           
                               
                               <h6 class="tags">
-                                  <a class="tag" href="/tags/Just-a-test/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> Just a test</a>
+                                  <a class="tag" href="/tags/c/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> c++</a>
                               </h6>
                           
                       </span>
                   </section>
               
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/10/14/leetcode实现数组加一操作/" rel="prev" title="leetcode实现数组加一的操作">
+                                  
+                                      leetcode实现数组加一的操作
+                                  
+                              </a>
+                          </h4>
+                          
+                              
+                              <h6 class="tags">
+                                  <a class="tag" href="/tags/c/"><i class="fas fa-tag fa-fw" aria-hidden="true"></i> c++</a>
+                              </h6>
+                          
+                      </span>
+                  </section>
               
           </div>
       
@@ -552,7 +561,7 @@
 
   <script>
     window.subData = {
-      title: 'Hello World',
+      title: 'leetcode有效的括号',
       tools: true
     }
   </script>
@@ -658,20 +667,6 @@
           
             
               
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
-  
-    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
-  
-</header>
-
-    <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
-    </div>
-  </section>
-
 
             
           
